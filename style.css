@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  font-family: arial;
+}
+ {
+}
+
+header {
+  background-color: gold;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header h1 {
+  color: white;
+  border: 4px solid white;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  max-width: 100%;
+}
+
+.banner .welcome {
+  background-color: lightskyblue;
+  color: white;
+  padding: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.banner h2 {
+  font-size: 42px;
+}
+
+.banner h2 span {
+  font-size: 1.3em;
+}
+
+nav {
+  background: #f4f4f4;
+  padding: 10px;
+  position: sticky;
+  top: 75px;
+}
+
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+nav li a.join {
+  color: goldenrod;
+}
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  color: goldenrod;
+  font-size: 32px;
+}
+
+article p {
+  line-height: 2em;
+  color: #4b4b4b;
+}
+
+.images {
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+
+.images li {
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+}
+
+.imagesli img {
+  max-width: 100%;
+}
+
+section.join {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4b4b4b;
+}
+
+.join h2 {
+  font-size: 36px;
+}
+
+form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 4px solid white;
+}
+
+footer {
+  background: #f63232;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.images li:hover {
+  position: relative;
+  top: -4px;
+  transition: 0.5s ease-in;
+}
+
+form input:focus {
+  border: 2px dashed #4b4b4b;
+  outline: none;
+  border-radius: 10px;
+}
+
+form input:valid {
+  border: 2px solid green;
+}
+
+article p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+section.join p::first-letter {
+  font-size: 1.5em;
+}
+
+p::selection {
+  background-color: blue;
+  color: white;
+}
+
+p::after {
+  content: "...";
+}
+
+/* responsive */
+
+@media screen and (max-width: 900px) {
+  .banner .welcome h2 {
+    font-size: 30px;
+  }
+}
